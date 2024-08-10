@@ -3,7 +3,9 @@ const productController = require('../controllers/productControllers')
 
 router.get('/products',productController.getAllProducts)
 
-router.post('/producs',productController.createProduct)
+router.get('/products/:id',productController.getProductById)
+
+router.post('/products',productController.createProduct)
 
 router.put('/products/:id',productController.updateProduct)
 
